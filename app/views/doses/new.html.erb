@@ -1,0 +1,11 @@
+<h1>New doses:</h1>
+<br>
+<%= simple_form_for [@doses] do |f| %>
+<%= f.input :name %>
+<%= f.input :doses %>
+<br>
+<br>
+<%= f.submit "Add doses", class: "btn btn-primary" %>
+<% end %>
+<br>
+<%= link_to 'Back', doses_path %>
