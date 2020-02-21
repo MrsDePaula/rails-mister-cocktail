@@ -7,9 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Ingredient.destroy_all
 puts "Creating Ingredients..."
-Ingredient.create!()
-puts "Successful"
 
+Ingredient.create!(name: "Gin")
 Ingredient.create(name: "Lemon")
 Ingredient.create(name: "Ice")
 Ingredient.create(name: "Mint leaves")
@@ -19,3 +18,5 @@ Ingredient.create(name: "Vodka")
 Ingredient.create(name: "Aperol")
 Ingredient.create(name: "Orange")
 Ingredient.create(name: "Sparkling Wine")
+
+puts "Successful"
