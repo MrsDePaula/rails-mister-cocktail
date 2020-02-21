@@ -13,6 +13,7 @@
             <h2><%= cocktail.name %></h2>
           </div>
           <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+          <%= link_to cocktail.name, cocktail_path(cocktail.id) %>
         </div>
       </div>
     <% end %>

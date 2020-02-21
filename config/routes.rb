@@ -1,17 +1,16 @@
 Rails.application.routes.draw do
+  root to: 'cocktails#index'
   get 'doses/new'
   get 'doses/create'
   get 'doses/edit'
   get 'doses/update'
   get 'doses/destroy'
-# For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :cocktails, only: [:index, :show, :new, :create] do
     resources :doses, only: [:create, :new]
   end
   resources :doses, only: [:destroy]
 end
-
-
 
 # 4 - Routing, Controller, Views for Doses
 # A user can add a new dose (ingredient/description pair) to an existing cocktail
